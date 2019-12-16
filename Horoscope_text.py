@@ -43,3 +43,10 @@ print("10 — Козерог")
 print("11 — Водолей")
 
 print("12 — Рыбы")
+
+zodiac = int(input('{blue}Введите число с номером знака Зодиака:{endcolor}'.format(blue = '\033[96m', endcolor = '\033[0m')))
+
+if 0 < zodiac < 13:
+    print(random.choice(first), random.choice(second), random.choice(second_add), random.choice(third))
+else:
+    print('Вы ощиблись числом, запустите прогррамму еще раз')

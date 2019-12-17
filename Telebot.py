@@ -18,6 +18,47 @@ def get_text_messages(message):
     else:
         bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help.')
 
+#готовим кнопки
+keyboard = types.InlineKeyboardMarkup()
+
+# По очереди готовим текст и обработчик для каждого знака зодиака
+
+key_oven = types.InlineKeyboardButton(text = 'Овен', callback_data = 'zodiac')
+keyboard.add(key_oven)
+
+key_telec = types.InlineKeyboardButton(text = 'Телец', callback_data = 'zodiac')
+keyboard.add(key_telec)
+
+key_gemini = types.InlineKeyboardButton(text = 'Близнецы', callback_data = 'zodiac')
+keyboard.add(key_gemini)
+
+key_cancer = types.InlineKeyboardButton(text = 'Рак', callback_data = 'zodiac')
+keyboard.add(key_cancer)
+
+key_lion = types.InlineKeyboardButton(text = 'Лев', callback_data = 'zodiac')
+keyboard.add(key_lion)
+
+key_deva = types.InlineKeyboardButton(text = 'Дева', callback_data = 'zodiac')
+keyboard.add(key_deva)
+
+key_vesy = types.InlineKeyboardButton(text = 'Весы', callback_data = 'zodiac')
+keyboard.add(key_vesy)
+
+key_scorpion = types.InlineKeyboardButton(text = 'Скорпион', callback_data = 'zodiac')
+keyboard.add(key_scorpion)
+
+key_strelec = types.InlineKeyboardButton(text = 'Стрелец', callback_data = 'zodiac')
+keyboard.add(key_strelec)
+
+key_kozerog = types.InlineKeyboardButton(text = 'Козерог', callback_data = 'zodiac')
+keyboard.add(key_kozerog)
+
+key_vodoley = types.InlineKeyboardButton(text = 'Водолей', callback_data = 'zodiac')
+keyboard.add(key_vodoley)
+
+key_ryby = types.InlineKeyboardButton(text = 'Рыбы', callback_data = 'zodiac')
+keyboard.add(key_ryby)
+
 bot.polling(none_stop=True, interval=0)
 
 first = ["Сегодня — идеальный день для новых начинаний.","Оптимальный день для того, чтобы решиться на смелый поступок!",

@@ -13,6 +13,10 @@ def get_text_messages(message):
         # Пишем приветствие
 
         bot.send_message(message.from_user.id, "Привет, сейчас я расскажу тебе гороскоп на сегодня.")
+    elif message.text == '/help':
+        bot.send_message(message.from_user.id, 'Напиши, привет.')
+    else:
+        bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help.')
 
 bot.polling(none_stop=True, interval=0)
 

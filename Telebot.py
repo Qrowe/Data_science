@@ -101,36 +101,3 @@ def callback_worker(call):
 bot.polling(none_stop=True, interval=0)
 
 
-
-print("1 — Овен")
-
-print("2 — Телец")
-
-print("3 — Близнецы")
-
-print("4 — Рак")
-
-print("5 — Лев")
-
-print("6 — Дева")
-
-print("7 — Весы")
-
-print("8 — Скорпион")
-
-print("9 — Стрелец")
-
-print("10 — Козерог")
-
-print("11 — Водолей")
-
-print("12 — Рыбы")
-
-zodiac = int(input('{blue}Введите число с номером знака Зодиака:{endcolor}'.format(blue = '\033[96m', endcolor = '\033[0m')))
-
-if 0 < zodiac < 13:
-    print(random.choice(first), random.choice(second), random.choice(second_add), random.choice(third))
-else:
-    print('Вы ощиблись числом, запустите прогррамму еще раз')
-
-
